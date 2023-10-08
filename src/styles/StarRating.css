@@ -1,0 +1,23 @@
+.star-rating {
+  font-size: 24px;
+}
+
+.fa {
+  font-family: FontAwesome, Arial;
+  padding: 2px;
+}
+
+/* Filled star */
+.fa-star.filled {
+  color: gold;
+}
+
+/* Half-filled star */
+.fa-star-half.filled {
+  color: gold;
+}
+
+/* Empty star */
+.fa-star-o {
+  color: #ccc;
+}

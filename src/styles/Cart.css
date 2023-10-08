@@ -1,0 +1,139 @@
+/* CSS for Cart Component */
+.cart-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cart-product-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    width: 500px;
+    background-color: rgb(251, 251, 251);
+}
+
+.cart-item-data {
+    display: flex;
+    padding: 8px;
+}
+
+.cart-product-image {
+    width: 200px;
+    height: 200px;
+}
+
+.cart-product-details {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-product-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-product-price {
+    font-size: 16px;
+    margin: 0;
+    color: #007bff;
+}
+
+.cart-product-count {
+    width: 100%;
+}
+
+.cart-remove-from-cart {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+}
+
+.cart-remove-from-cart-button button {
+    color: white;
+    background-color: rgb(225, 86, 86);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.cart-remove-from-cart-button button:hover {
+    background-color: #b39800;
+}
+
+.cart-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cart-pagination button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.page-number:hover {
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+/* CSS for Mobile View */
+@media (max-width: 768px) {
+
+
+    .cart-product-list {
+        width: 90%;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .cart-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-product-count {
+        width: 100%;
+    }
+
+    .active-page {
+        background-color: #007bff !important;
+    }
+
+    .cart-product-image {
+        width: 150px;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .cart-remove-from-cart {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        padding: 5px;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+    }
+
+    .cart-remove-from-cart-button button {
+        color: white;
+        background-color: rgb(225, 86, 86);
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    .cart-pagination {
+        margin-top: 16px;
+    }
+}
