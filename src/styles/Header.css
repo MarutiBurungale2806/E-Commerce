@@ -14,14 +14,18 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 nav ul li {
     display: inline;
+    order: 1;
 }
+
 nav ul li.cart-item {
-    position: absolute;
-    right: 3rem;
+    order: 3;
+        position: absolute;
+        right: 1rem; 
 }
 
 nav ul li a {
@@ -58,7 +62,6 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         align-items: flex-start;
         padding: 10px;
     }
@@ -66,9 +69,11 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        align-items: flex-start;
     }
 
     nav ul li.cart-item {
+        order: 3;
         position: absolute;
         right: 1rem;
     }

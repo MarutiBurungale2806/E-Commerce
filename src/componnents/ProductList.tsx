@@ -68,7 +68,7 @@ const ProductList = ({ addToCart }: ProductListProps) => {
                                 <div className="product-description">
                                     <p>
                                         {expandedDescriptions[index]
-                                            ? product.description 
+                                            ? product.description
                                             : `${product.description.slice(0, 70)}...`}
                                         {product.description.length > 70 && (
                                             <span
@@ -89,7 +89,7 @@ const ProductList = ({ addToCart }: ProductListProps) => {
                         </div>
                     ))}
                     <div className="pagination">
-                        <button
+                        <button className='btn-previous'
                             onClick={() => handlePageChange(currentPage - 1)}
                             disabled={currentPage === 1}
                         >
@@ -104,7 +104,7 @@ const ProductList = ({ addToCart }: ProductListProps) => {
                                 {index + 1}
                             </button>
                         ))}
-                        <button
+                        <button className='btn-next'
                             onClick={() => handlePageChange(currentPage + 1)}
                             disabled={currentPage === totalPages}
                         >

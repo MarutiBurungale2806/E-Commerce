@@ -142,6 +142,20 @@
     border: none;
     background: none;
     cursor: pointer;
+    margin: 5px;
+}
+
+.btn-previous{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(202, 196, 196) !important;
+}
+.btn-next{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(202, 196, 196) !important;
 }
 
 /* CSS for Mobile Screens */

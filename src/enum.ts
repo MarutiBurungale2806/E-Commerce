@@ -5,26 +5,46 @@ export interface Product {
     price: number;
     image: string;
     count: number
-    rating:{
-        count:number,
+    rating: {
+        count: number,
         rate: number
-    }
-  }
+    };
+    quantity: number
+}
+
 
 export interface CartProps {
-    cartItems: Product[];
     removeFromCart: (id: number) => void;
-  }
+    updateQuantity: (productId: number, newQuantity: number) => void;
+    userCarts: {};
+    productList: Product[]
+}
 
-export  interface ProductListProps {
+export interface ProductListProps {
     addToCart: (product: Product) => void;
 }
 
 export interface Rating {
-    rating : number
+    rating: number
 }
 
 export interface HeaderProps {
-    cartItems: Product[];
+    cartItemsCount: number;
 }
+
+export interface userId {
+    id: number
+}
+
+export interface CartData {
+    id: number;
+    userId: number;
+    date: string;
+    products: {
+      productId: number;
+      quantity: number;
+    }[];
+    __v: number;
+  }
   
+
